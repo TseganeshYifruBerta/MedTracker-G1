@@ -6,11 +6,6 @@ public class TestWebApplicationFactory<TStartup> : WebApplicationFactory<TStartu
         where TStartup : class
 {
 
-    public TestWebApplicationFactory()
-    {
-        BuildConfiguration();
-
-    }
     public WebApplicationFactory<TStartup> WithEnvironment(Dictionary<string, string> variables)
     {
         foreach (var variable in variables)
